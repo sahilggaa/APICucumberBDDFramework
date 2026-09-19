@@ -1,7 +1,7 @@
 Feature: Validatee Add Place API
 
 
-@AddPlace
+@AddPlace @Regression
 Scenario Outline: Validate Add Place API with post request
 Given Add Place Payload with "<name>" "<address>" "<language>"
 When user calls "AddPlaceAPI" with "Post" http request
@@ -16,7 +16,7 @@ Examples:
 
 
 
-@DeletePlace
+@DeletePlace @Regression
 Scenario: Validate Delete Place API with Post request
 Given Delete Place Payload with "place_id"
 When delete api is hit with "DeletePlaceAPI" with "Post" http request
